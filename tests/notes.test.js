@@ -24,6 +24,7 @@ test("search returns nothing when no note contains the term", () => {
   const result = matches(notes, "xyz");
   assert.strictEqual(result.length, 0);
 });
+<<<<<<< HEAD
 
 test("edit updates an existing note and returns false for an unknown id", () => {
   const os = require("node:os");
@@ -36,3 +37,5 @@ test("edit updates an existing note and returns false for an unknown id", () => 
   assert.strictEqual(store.all()[0].text, "new");
   assert.strictEqual(store.edit(999, "x"), false);
 });
+=======
+>>>>>>> origin/main
